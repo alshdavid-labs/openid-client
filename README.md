@@ -6,6 +6,7 @@ p := openidClient.NewProvider(
     "client name",
     "client secret"
 )
+p.AddScopes("something")
     
 func LoginHandler(w http.ResponseWriter, r *http.Request) {
     url := p.GenerateLoginURL("state")
