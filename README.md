@@ -1,6 +1,6 @@
 # oidc
 
-```
+```go
 p := openidClient.NewProvider(
     "idp url",
     "client name",
